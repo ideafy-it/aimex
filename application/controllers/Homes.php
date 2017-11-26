@@ -1,10 +1,12 @@
 <?php
 class Homes extends CI_Controller {
-    public function index()
+    public function index($home = 'login')
 	{
-        $this->load->view('templates/header');
-        $this->load->view('homes/index');
-        $this->load->view('templates/_partials/_homes/_FooterBackgroundJs');
+        $data['title'] = ucfirst($home);
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('homes/index', $data);
+        $this->load->view('templates/_partials/_homes/_FooterBackgroundJs', $data);
 	}
 
     public function view($home = 'index'){
