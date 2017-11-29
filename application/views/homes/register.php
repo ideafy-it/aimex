@@ -36,19 +36,19 @@
               <form role="form" action="" method="post" class="login-form">
               	<div class="form-group">
               		<label class="sr-only" for="form-username">Employee Name</label>
-                  	<input type="text" name="form-username" placeholder="EMPLOYEE NAME" class="form-username form-control" id="form-username">
+                  	<input type="text" name="form-username" placeholder="EMPLOYEE NAME" class="form-username form-control" id="form-username" data-parsley-required>
                   </div>
                   <div class="form-group">
                   	<label class="sr-only" for="form-passusername">Username</label>
-                  	<input type="password" name="form-passusername" placeholder="USERNAME" class="form-username form-control" id="form-username">
+                  	<input type="password" name="form-passusername" placeholder="USERNAME" class="form-username form-control" id="form-username" data-parsley-required>
                   </div>
                            <div class="form-group">
                                <label class="sr-only" for="form-password">Password</label>
-                               <input type="password" name="form-password" placeholder="PASSWORD" class="form-password form-control" id="form-password">
+                               <input type="password" name="form-password" placeholder="PASSWORD" class="form-password form-control" id="form-password" data-parsley-required data-parsley-minlength="8">
                            </div>
                            <div class="form-group">
                                <label class="sr-only" for="form-password">Confirm Password</label>
-                               <input type="password" name="form-password" placeholder="CONFIRM PASSWORD" class="form-password form-control" id="form-password">
+                               <input type="password" name="form-password" placeholder="CONFIRM PASSWORD" class="form-password form-control" id="form-password" data-parsley-required data-parsley-minlength="8">
                            </div>
                            
                            <div class="form-group">
