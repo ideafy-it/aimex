@@ -1,5 +1,6 @@
 <?php
 class Admins extends CI_Controller {
+    // Views
     public function view($admin = 'home'){
         if(!file_exists(APPPATH.'views/admins/'.$admin.'.php')){
             // Shows error if page does not exist

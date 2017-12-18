@@ -1,5 +1,6 @@
 <?php
 class Homes extends CI_Controller {
+    // Index View
     public function index($home = 'login')
 	{
         $data['title'] = ucfirst($home);
@@ -9,6 +10,7 @@ class Homes extends CI_Controller {
         $this->load->view('templates/_partials/_homes/_FooterBackgroundJs', $data);
 	}
 
+    // Views
     public function view($home = 'index'){
         if(!file_exists(APPPATH.'views/homes/'.$home.'.php')){
             // Shows error if page does not exist
