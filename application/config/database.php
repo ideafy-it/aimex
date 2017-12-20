@@ -97,10 +97,10 @@ $db['default'] = array(
 
 $db['uat'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'aimex-uat',
+	'hostname' => '192.168.254.117',
+	'username' => 'aimex',
+	'password' => '@imex',
+	'database' => 'aimexuat',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => TRUE,
