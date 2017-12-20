@@ -1,5 +1,5 @@
 <?php
-class Homes extends CI_Controller {
+class Main extends CI_Controller {
     // Index View
     public function index($home = 'login')
 	{
