@@ -33,14 +33,14 @@
             		</div>
                 </div>
                 <div class="form-bottom">
-                    <form role="form" action="" method="post" class="login-form">
+                    <form role="form" action="<?=base_url();?>login_validation" method="post" class="login-form" data-parsley-validate>
                         <div class="form-group">
            	            	<label class="sr-only" for="form-username">Username</label>
                            	<input type="text" name="form-username" placeholder="USERNAME" class="form-username form-control" id="form-username" parsley-data-required>
                         </div>
                         <div class="form-group">
                    	        <label class="sr-only" for="form-password">Password</label>
-                   	        <input type="password" name="form-password" placeholder="PASSWORD" class="form-password form-control" id="form-password">
+                   	        <input type="password" name="form-password" placeholder="PASSWORD" class="form-password form-control" id="form-password" parsley-data-required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="sign-in" href="transactiontype.html">SIGN IN</button>
