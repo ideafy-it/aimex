@@ -23,4 +23,9 @@ class Main extends CI_Controller {
         $this->load->view('homes/'.$home, $data);
         $this->load->view('templates/_partials/_homes/_FooterBackgroundJs', $data);
     }
+
+    function login_validation() {
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('username', 'Username', 'required');
+    }
 }
